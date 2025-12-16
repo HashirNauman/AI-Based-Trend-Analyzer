@@ -1,0 +1,92 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Replace gradient with background-image properties to allow inline backgroundImage to show */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+/* src/global.css - Unified dark theme for Advanced Trend Analyzer */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Dark theme variables - Tech forward aesthetic */
+:root {
+  /* Backgrounds */
+  --background: #0f0f0f;
+  --card: #1a1a1a;
+
+  /* Text Colors */
+  --foreground: #f5f5f5;
+  --muted-foreground: #a0a0a0;
+
+  /* Primary - Vibrant Blue */
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+
+  /* Secondary - Purple accent */
+  --secondary: #8b5cf6;
+  --secondary-foreground: #ffffff;
+
+  /* UI Elements */
+  --border: #2a2a2a;
+  --input: #1f1f1f;
+  --ring: #3b82f6;
+
+  /* Status Colors */
+  --destructive: #ef4444;
+  --destructive-foreground: #fca5a5;
+
+  /* Spacing & Radius */
+  --radius: 10px;
+}
+
+/* Global styling */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cards and containers */
+.card {
+  background-color: var(--card);
+  color: var(--foreground);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* Utility classes */
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.bg-accent {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
